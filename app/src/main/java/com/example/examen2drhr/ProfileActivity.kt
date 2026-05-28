@@ -1,5 +1,6 @@
 package com.example.examen2drhr
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -13,6 +14,7 @@ class ProfileActivity : AppCompatActivity() {
     private lateinit var btnSaveProfile: Button
     private lateinit var tvProfileMessage: TextView
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
